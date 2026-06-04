@@ -29,9 +29,31 @@ const upcoming = [
 ];
 
 const weekly = [
-  { day: 'Sunday', time: '8:00 AM', title: 'Morning Service' },
-  { day: 'Wednesday', time: '5:30 PM', title: 'Bible Study' },
-  { day: 'Friday', time: '10:00 PM', title: 'Vigil & Prayer Watch' },
+  { day: 'Sunday', time: '8:00 AM – 8:45 AM', title: 'Sunday School' },
+  { day: 'Sunday', time: '9:00 AM – 12:00 NOON', title: 'Sunday Worship' },
+  { day: 'Tuesday', time: '9:00 AM – 12:00 NOON', title: 'Shilo Service' },
+  {
+    day: 'Tue & Thu',
+    time: '8:00 AM – 4:00 PM',
+    title: 'Counselling Sessions',
+  },
+];
+
+const special = [
+  {
+    tag: 'Monthly Programme',
+    title: 'From Wilderness to Glory',
+    when: 'Last Friday of Every Month',
+    time: '11:00 PM – 3:00 AM',
+    desc: 'A monthly all-night encounter — deliverance, breakthrough, and divine repositioning.',
+  },
+  {
+    tag: 'Annual Convention',
+    title: 'Prophetic Convention',
+    when: 'Late July – Early September',
+    time: '40 Days Fasting, Prayers & Vigil',
+    desc: 'Our flagship annual gathering — 40 days of consecration, prophecy, and impartation.',
+  },
 ];
 
 const past = [
@@ -180,17 +202,54 @@ export function EventsContent() {
           <h2 className='mt-5 font-display text-4xl lg:text-5xl text-parchment'>
             Every week, every <span className='italic text-gold'>altar</span>.
           </h2>
-          <div className='mt-12 grid sm:grid-cols-3 gap-px bg-parchment/10'>
+          <div className='mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-parchment/10'>
             {weekly.map((w) => (
-              <div key={w.day} className='bg-ink p-10'>
+              <div key={w.title} className='bg-ink p-10'>
                 <p className='text-xs uppercase tracking-[0.3em] text-gold'>
                   {w.day}
                 </p>
-                <h3 className='mt-3 font-display text-3xl text-parchment'>
+                <h3 className='mt-3 font-display text-2xl text-parchment'>
                   {w.title}
                 </h3>
-                <p className='mt-4 text-parchment/70'>{w.time}</p>
+                <p className='mt-4 text-parchment/70 text-sm'>{w.time}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SPECIAL PROGRAMMES */}
+      <section className='py-24'>
+        <div className='mx-auto max-w-7xl px-5 lg:px-10'>
+          <p className='gold-divider'>Special Programmes</p>
+          <h2 className='mt-5 font-display text-4xl lg:text-5xl'>
+            Seasons of <span className='italic text-gold'>encounter</span>.
+          </h2>
+          <div className='mt-12 grid md:grid-cols-2 gap-8'>
+            {special.map((s) => (
+              <article
+                key={s.title}
+                className='relative overflow-hidden border border-border bg-card p-10 rounded-sm group'
+              >
+                <div className='absolute top-0 right-0 h-32 w-32 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/10 transition' />
+                <p className='text-xs uppercase tracking-[0.3em] text-gold'>
+                  {s.tag}
+                </p>
+                <h3 className='mt-4 font-display text-3xl lg:text-4xl'>
+                  {s.title}
+                </h3>
+                <div className='mt-5 space-y-1.5 text-sm'>
+                  <p className='flex items-center gap-2'>
+                    <HiCalendar className='text-gold' /> {s.when}
+                  </p>
+                  <p className='flex items-center gap-2'>
+                    <HiClock className='text-gold' /> {s.time}
+                  </p>
+                </div>
+                <p className='mt-5 text-muted-foreground leading-relaxed'>
+                  {s.desc}
+                </p>
+              </article>
             ))}
           </div>
         </div>

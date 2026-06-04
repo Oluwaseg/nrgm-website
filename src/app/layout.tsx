@@ -1,4 +1,5 @@
 import { Footer } from '@/components/Footer';
+import { MobileQuickActions } from '@/components/MobileQuickActions';
 import { Navbar } from '@/components/Navbar';
 import type { Metadata } from 'next';
 import { Cormorant_Garamond, Inter } from 'next/font/google';
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <MobileQuickActions />
       </body>
     </html>
   );
