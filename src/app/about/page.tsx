@@ -3,6 +3,15 @@ import { img } from '@/constants';
 import type { Metadata } from 'next';
 import { HiCheckCircle } from 'react-icons/hi';
 
+import { StaticImageData } from 'next/image';
+
+type TimelineItem = {
+  year: string;
+  title: string;
+  desc: string;
+  image: string | StaticImageData;
+};
+
 export const metadata: Metadata = {
   title: 'About — Cherubim & Seraphim New Generation Revelation Ministry',
   description:
@@ -23,41 +32,41 @@ export default function About() {
     'Restoration and healing',
   ];
 
-  const timeline = [
+  const timeline: TimelineItem[] = [
     {
       year: '2008',
       title: 'Ministry Founded',
       desc: 'The ministry is born from a divine revelation in Ogun State.',
-      image: img.founding,
+      image: img.founded,
     },
     {
       year: '2010',
       title: 'Early Worship Gatherings',
       desc: 'Intimate prayer meetings gather a growing remnant.',
-      image: img.candles,
+      image: img.early,
     },
     {
       year: '2014',
       title: 'Church Growth & Expansion',
       desc: 'The auditorium fills as new families join the fold.',
-      image: img.auditorium,
+      image: img.growth,
     },
     {
       year: '2018',
       title: 'International Assignments',
       desc: 'Ministry crosses borders — UK, US, Dubai, and beyond.',
-      image: img.global,
+      image: img.international,
     },
     {
       year: '2026',
       title: 'Present-Day Ministry',
       desc: 'A generation continues to be raised in spirit and truth.',
-      image: img.choir,
+      image: img.image_a,
     },
   ];
 
   const timelineImages = timeline.map((t) => ({
-    src: t.image.src,
+    src: typeof t.image === 'string' ? t.image : t.image.src,
     title: `${t.year} — ${t.title}`,
     description: t.desc,
   }));
@@ -67,7 +76,7 @@ export default function About() {
       {/* HERO */}
       <section className='relative h-[70vh] min-h-[500px] flex items-end overflow-hidden'>
         <img
-          src={img.auditorium.src}
+          src={img.image_a}
           alt='Congregation'
           fetchPriority='high'
           decoding='async'
@@ -132,7 +141,7 @@ export default function About() {
               <span className='italic text-gold'>shape everything</span>.
             </h2>
             <img
-              src={img.bible.src}
+              src={img.founder5}
               alt='Open Bible'
               loading='lazy'
               className='mt-10 w-full rounded-sm frame-gold'
@@ -194,7 +203,9 @@ export default function About() {
                   <div className='pl-12 lg:pl-0 lg:pl-12'>
                     <div className='aspect-[4/3] overflow-hidden rounded-sm'>
                       <img
-                        src={t.image.src}
+                        src={
+                          typeof t.image === 'string' ? t.image : t.image.src
+                        }
                         alt={t.title}
                         loading='lazy'
                         className='h-full w-full object-cover'

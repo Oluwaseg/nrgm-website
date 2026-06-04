@@ -10,10 +10,10 @@ const links = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/founder', label: 'Founder' },
-  { to: '/ministries', label: 'Ministries' },
+  // { to: '/ministries', label: 'Ministries' },
   { to: '/events', label: 'Events' },
   { to: '/gallery', label: 'Gallery' },
-  { to: '/sermons', label: 'Sermons' },
+  // { to: '/sermons', label: 'Sermons' },
   { to: '/contact', label: 'Contact' },
 ] as const;
 
@@ -76,12 +76,12 @@ export function Navbar() {
               {l.label}
             </Link>
           ))}
-          <Link
+          {/* <Link
             href='/donate'
             className='ml-2 inline-flex items-center rounded-full bg-gold px-5 py-2 text-xs font-semibold uppercase tracking-widest text-ink transition hover:bg-gold-soft'
           >
             Give
-          </Link>
+          </Link> */}
         </nav>
 
         <button
@@ -106,13 +106,13 @@ export function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <Link
+            {/* <Link
               href='/donate'
               onClick={() => setOpen(false)}
               className='mt-3 inline-flex items-center justify-center rounded-full bg-gold px-5 py-2.5 text-xs font-semibold uppercase tracking-widest text-ink'
             >
               Give
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

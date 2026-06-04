@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 
 const earlyMinistry = [
   {
-    src: img.founding.src,
+    src: img.founded,
     title: '2008 — Ministry Founded',
     description: 'The first gatherings in a modest hall in Ogun State.',
   },
   {
-    src: img.candles.src,
+    src: img.early,
     title: 'Hours of Prayer',
     description: "Late-night vigils that shaped the ministry's foundation.",
   },
@@ -27,17 +27,17 @@ const earlyMinistry = [
 
 const impactImages = [
   {
-    src: img.crusade.src,
+    src: img.image_m,
     title: 'Open-air Crusade',
     description: 'The gospel preached to thousands under the night sky.',
   },
   {
-    src: img.prayer.src,
+    src: img.image_e,
     title: 'Altar of Healing',
     description: 'Hands laid for impartation and restoration.',
   },
   {
-    src: img.choir.src,
+    src: img.image_a,
     title: 'Sunday Glory',
     description: "Worship that fills the auditorium with God's presence.",
   },
@@ -45,23 +45,23 @@ const impactImages = [
 
 const globalImages = [
   {
-    src: img.global.src,
+    src: img.international,
     title: 'International Conference',
     description: 'Ministering at a global gathering of leaders.',
   },
   {
-    src: img.evangelism.src,
+    src: img.image_m,
     title: 'Outreach Team',
     description: 'Carrying the gospel to communities abroad.',
   },
 ];
 
 const timeline = [
-  { year: '2008', title: 'Ministry Founded', image: img.founding },
-  { year: '2011', title: 'First Revival Programs', image: img.candles },
-  { year: '2015', title: 'Church Expansion', image: img.auditorium },
-  { year: '2019', title: 'International Missions', image: img.global },
-  { year: '2026', title: 'Present-Day Ministry', image: img.choir },
+  { year: '2008', title: 'Ministry Founded', image: img.founded },
+  { year: '2011', title: 'First Revival Programs', image: img.early },
+  { year: '2015', title: 'Church Expansion', image: img.growth },
+  { year: '2019', title: 'International Missions', image: img.international },
+  { year: '2026', title: 'Present-Day Ministry', image: img.image_a },
 ];
 
 export default function Founder() {
@@ -70,7 +70,7 @@ export default function Founder() {
       {/* HERO */}
       <section className='relative min-h-[100vh] flex items-end overflow-hidden ink-section'>
         <img
-          src={img.founder.src}
+          src={img.founder6}
           alt='Prophet Dr. M.O.A. Ajidara'
           className='absolute inset-0 h-full w-full object-cover object-top opacity-70'
         />
@@ -205,7 +205,7 @@ export default function Founder() {
               <div key={t.year} className='bg-background group overflow-hidden'>
                 <div className='aspect-[3/4] overflow-hidden'>
                   <img
-                    src={t.image.src}
+                    src={t.image}
                     alt={t.title}
                     loading='lazy'
                     className='h-full w-full object-cover transition duration-700 group-hover:scale-110'

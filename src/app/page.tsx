@@ -1,3 +1,4 @@
+import { FounderCarousel } from '@/components/FounderCarousel';
 import { LightboxGallery } from '@/components/LightboxGallery';
 import { img } from '@/constants';
 import type { Metadata } from 'next';
@@ -10,7 +11,7 @@ import {
   FaPrayingHands,
   FaUsers,
 } from 'react-icons/fa';
-import { HiArrowRight, HiPlay } from 'react-icons/hi';
+import { HiArrowRight } from 'react-icons/hi';
 
 export const metadata: Metadata = {
   title: 'Home — Cherubim & Seraphim New Generation Revelation Ministry',
@@ -58,48 +59,55 @@ const ministries = [
 
 const galleryPreview = [
   {
-    src: img.choir.src,
+    src: img.image_d,
     title: 'Sunday Worship',
     description: 'Choir ministrations lifting praise to the Most High.',
   },
   {
-    src: img.crusade.src,
+    src: img.image_f,
     title: 'Night of Revival',
     description: 'Open-air crusade reaching the lost in our community.',
   },
   {
-    src: img.prayer.src,
+    src: img.image_e,
     title: 'Hour of Impartation',
     description: 'Prophet ministering at the altar of healing.',
   },
   {
-    src: img.baptism.src,
+    src: img.image_g,
     title: 'River Baptism',
     description: 'New believers entering the covenant by water.',
   },
   {
-    src: img.candles.src,
+    src: img.image_h,
     title: 'Evening Watch',
     description: 'Stillness before God in the late candle hour.',
   },
   {
-    src: img.global.src,
+    src: img.image_j,
     title: 'International Pulpit',
     description: 'Carrying the Word across nations.',
   },
   {
-    src: img.youth.src,
+    src: img.image_k,
     title: 'Youth Encounter',
     description: 'A generation lifting up holy hands.',
   },
   {
-    src: img.women.src,
+    src: img.image_i,
     title: "Women's Fellowship",
     description: 'Daughters of Zion gathered in unity.',
   },
 ];
 
 export default function Home() {
+  const founderImages = [
+    img.founder1,
+    img.founder2,
+    img.founder3,
+    img.founder4,
+  ];
+
   return (
     <>
       {/* HERO */}
@@ -152,7 +160,7 @@ export default function Home() {
         <div className='mx-auto max-w-7xl px-5 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center'>
           <div className='relative'>
             <img
-              src={img.auditorium.src}
+              src={img.image_a}
               alt='Church auditorium'
               loading='lazy'
               className='w-full rounded-sm frame-gold'
@@ -200,15 +208,7 @@ export default function Home() {
         </div>
         <div className='mx-auto max-w-7xl px-5 lg:px-10 grid lg:grid-cols-12 gap-12 items-center relative'>
           <div className='lg:col-span-5'>
-            <div className='relative max-w-md mx-auto'>
-              <div className='absolute -inset-3 border border-gold/50' />
-              <img
-                src={img.founder.src}
-                alt='Prophet Dr. M.O.A. Ajidara'
-                loading='lazy'
-                className='relative w-full'
-              />
-            </div>
+            <FounderCarousel images={founderImages} />
           </div>
           <div className='lg:col-span-7'>
             <p className='gold-divider text-gold-soft'>Meet our Founder</p>
@@ -236,7 +236,7 @@ export default function Home() {
       </section>
 
       {/* MINISTRIES */}
-      <section className='py-24 lg:py-32'>
+      {/* <section className='py-24 lg:py-32'>
         <div className='mx-auto max-w-7xl px-5 lg:px-10'>
           <div className='flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14'>
             <div className='max-w-2xl'>
@@ -272,7 +272,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* EVENTS */}
       <section className='relative py-24 bg-secondary'>
@@ -297,13 +297,13 @@ export default function Home() {
           </div>
           <div className='grid grid-cols-2 gap-4'>
             <img
-              src={img.crusade.src}
+              src={img.image_b}
               alt='Night of revival'
               loading='lazy'
               className='w-full aspect-[3/4] object-cover rounded-sm translate-y-6'
             />
             <img
-              src={img.choir.src}
+              src={img.image_c}
               alt='Sunday worship'
               loading='lazy'
               className='w-full aspect-[3/4] object-cover rounded-sm'
@@ -339,7 +339,7 @@ export default function Home() {
       </section>
 
       {/* SERMONS */}
-      <section className='ink-section py-24'>
+      {/* <section className='ink-section py-24'>
         <div className='mx-auto max-w-7xl px-5 lg:px-10 grid lg:grid-cols-2 gap-12 items-center'>
           <div className='relative aspect-video rounded-sm overflow-hidden frame-gold group cursor-pointer'>
             <img
@@ -373,7 +373,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CONTACT TEASER */}
       <section className='py-24 lg:py-32'>

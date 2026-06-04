@@ -126,28 +126,36 @@ export function Footer() {
             </li>
             <li>
               <Link
+                href='/founder'
+                className='text-parchment/80 hover:text-gold'
+              >
+                Founder
+              </Link>
+            </li>
+            {/* <li>
+              <Link
                 href='/ministries'
                 className='text-parchment/80 hover:text-gold'
               >
                 Ministries
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link
                 href='/sermons'
                 className='text-parchment/80 hover:text-gold'
               >
                 Sermons
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link
                 href='/donate'
                 className='text-parchment/80 hover:text-gold'
               >
                 Give
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

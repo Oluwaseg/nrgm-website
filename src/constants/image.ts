@@ -34,4 +34,60 @@ export const img = {
   baptism,
   candles,
   logo,
+  founder1:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565579/IMG-20260604-WA0057_ssril5.jpg',
+  founder2:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565577/IMG-20260604-WA0056_ccgkkw.jpg',
+  founder3:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565556/IMG-20260604-WA0029_o8fh3e.jpg',
+  founder4:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565565/IMG-20260604-WA0009_od5dj8.jpg',
+  founder5:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780570559/67887884_646833185821444_1578555362095661056_n.jpg_c6gwl0.jpg',
+  founder6:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780570585/71593605_687444595093636_416547145504522240_n.jpg_iqkdud.jpg',
+  founder7: '',
+  founder8: '',
+  founder9: '',
+  founder10: '',
+
+  founded:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780570215/488699506_2061411161030299_5706688121258083569_n.jpg_logx5h.jpg',
+
+  early:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780570378/487195994_2056984941472921_5762554927548278492_n.jpg_cs2a7x.jpg',
+  growth:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780570876/116581542_919784568526303_5527116209551263704_n.jpg_drjieo.jpg',
+  international:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780570838/88051604_807897696381658_5799610243776249856_n.jpg_sc3pzo.jpg',
+
+  image_a:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565577/IMG-20260604-WA0003_uthcc2.jpg',
+  image_b:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565558/IMG-20260604-WA0032_g5r8qg.jpg',
+  image_c:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565538/IMG-20260604-WA0047_poaykg.jpg',
+  image_d:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780568547/IMG-20260604-WA0058_puonfs.jpg',
+  image_e:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565558/IMG-20260604-WA0031_hj4s18.jpg',
+  image_f:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565533/IMG-20260604-WA0052_x1knw0.jpg',
+  image_g:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565551/IMG-20260604-WA0022_jyavv3.jpg',
+  image_h:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565533/IMG-20260604-WA0055_ggkpvy.jpg',
+  image_i:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565535/IMG-20260604-WA0051_vstvkt.jpg',
+  image_j:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565564/IMG-20260604-WA0012_biuwna.jpg',
+  image_k:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565580/IMG-20260604-WA0054_pfgclh.jpg',
+  image_l:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780565545/IMG-20260604-WA0034_aivavd.jpg',
+  image_m:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780570482/487485567_2056984994806249_7061624647594081317_n.jpg_ampvwj.jpg',
+  image_n: '',
+  image_o: '',
+  image_p: '',
 };

@@ -1,5 +1,4 @@
 'use client';
-import { LightboxGallery } from '@/components/LightboxGallery';
 import { img } from '@/constants';
 import { useEffect, useState } from 'react';
 import { HiCalendar, HiClock, HiLocationMarker } from 'react-icons/hi';
@@ -138,7 +137,7 @@ export function EventsContent() {
       </section>
 
       {/* UPCOMING */}
-      <section className='py-24'>
+      {/* <section className='py-24'>
         <div className='mx-auto max-w-7xl px-5 lg:px-10'>
           <p className='gold-divider'>Upcoming Events</p>
           <h2 className='mt-5 font-display text-4xl lg:text-5xl'>
@@ -193,7 +192,7 @@ export function EventsContent() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* WEEKLY */}
       <section className='ink-section py-24'>
@@ -256,7 +255,7 @@ export function EventsContent() {
       </section>
 
       {/* PAST */}
-      <section className='py-24 lg:py-32'>
+      {/* <section className='py-24 lg:py-32'>
         <div className='mx-auto max-w-7xl px-5 lg:px-10'>
           <p className='gold-divider'>Past Programs</p>
           <h2 className='mt-5 font-display text-4xl lg:text-5xl'>
@@ -266,7 +265,7 @@ export function EventsContent() {
             <LightboxGallery images={past} variant='grid' />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FLYER POPUP */}
       {popup && (
