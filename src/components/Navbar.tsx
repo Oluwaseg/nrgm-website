@@ -1,4 +1,6 @@
 'use client';
+import { img } from '@/constants/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -37,12 +39,15 @@ export function Navbar() {
     >
       <div className='mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-10'>
         <Link href='/' className='flex items-center gap-3 group'>
-          <div className='relative h-10 w-10 shrink-0'>
+          <div className='relative h-16 w-16 shrink-0'>
             <div className='absolute inset-0 rounded-full bg-gradient-to-br from-gold to-ember' />
-            <div className='absolute inset-[2px] rounded-full bg-background flex items-center justify-center'>
-              <span className='font-display text-base font-semibold text-ink'>
-                C&S
-              </span>
+            <div className='absolute inset-0 rounded-full bg-background overflow-hidden'>
+              <Image
+                src={img.logo.src}
+                alt='Cherubim & Seraphim Logo'
+                fill
+                className='object-contain '
+              />
             </div>
           </div>
           <div className='leading-tight'>

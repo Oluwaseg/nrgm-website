@@ -14,6 +14,9 @@ import prayer from '@/assets/prayer.jpg';
 import women from '@/assets/women.jpg';
 import youth from '@/assets/youth.jpg';
 
+// Custom Image
+import logo from '@/assets/logo.png';
+
 export const img = {
   heroWorship,
   founder,
@@ -30,4 +33,5 @@ export const img = {
   global,
   baptism,
   candles,
+  logo,
 };

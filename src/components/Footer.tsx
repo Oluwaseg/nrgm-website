@@ -1,3 +1,5 @@
+import { img } from '@/constants/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   FaFacebook,
@@ -15,9 +17,16 @@ export function Footer() {
       <div className='mx-auto max-w-7xl px-5 lg:px-10 py-16 grid gap-12 lg:grid-cols-4'>
         <div className='lg:col-span-2 max-w-md'>
           <div className='flex items-center gap-3'>
-            <div className='h-10 w-10 rounded-full bg-gradient-to-br from-gold to-ember p-[2px]'>
-              <div className='h-full w-full rounded-full bg-ink flex items-center justify-center'>
-                <span className='font-display text-sm text-gold'>C&S</span>
+            <div className='relative h-16 w-16 shrink-0'>
+              <div className='absolute inset-0 rounded-full bg-gradient-to-br from-gold to-ember' />
+
+              <div className='absolute inset-[2px] rounded-full bg-ink overflow-hidden'>
+                <Image
+                  src={img.logo.src}
+                  alt='Cherubim & Seraphim Logo'
+                  fill
+                  className='object-contain'
+                />
               </div>
             </div>
             <div>
