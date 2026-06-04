@@ -1,0 +1,161 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Cherubim & Seraphim — Sacred Heritage design system
+   Palette: deep midnight indigo, ivory parchment, sacred gold, ember red sash */
+
+@theme inline {
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-script: 'Cormorant Garamond', serif;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 18px;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ink: var(--ink);
+  --color-parchment: var(--parchment);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-ember: var(--ember);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Sacred palette */
+  --ink: oklch(0.18 0.04 265); /* deep midnight */
+  --ink-soft: oklch(0.28 0.05 265);
+  --parchment: oklch(0.97 0.015 80); /* warm ivory */
+  --parchment-deep: oklch(0.93 0.025 78);
+  --gold: oklch(0.74 0.13 80); /* sacred gold */
+  --gold-soft: oklch(0.86 0.07 82);
+  --ember: oklch(0.52 0.18 25); /* red sash */
+
+  --background: var(--parchment);
+  --foreground: var(--ink);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--ink);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--parchment);
+  --secondary: var(--parchment-deep);
+  --secondary-foreground: var(--ink);
+  --muted: oklch(0.93 0.015 80);
+  --muted-foreground: oklch(0.45 0.03 265);
+  --accent: var(--gold);
+  --accent-foreground: var(--ink);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.88 0.02 80);
+  --input: oklch(0.88 0.02 80);
+  --ring: var(--gold);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: 'ss01', 'cv11';
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .gold-rule {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--gold) 50%,
+      transparent
+    );
+    height: 1px;
+  }
+  .gold-divider {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--gold);
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.7rem;
+  }
+  .gold-divider::before,
+  .gold-divider::after {
+    content: '';
+    width: 2.5rem;
+    height: 1px;
+    background: var(--gold);
+  }
+  .hero-veil {
+    background: linear-gradient(
+      180deg,
+      oklch(0.15 0.04 265 / 0.6) 0%,
+      oklch(0.15 0.04 265 / 0.35) 40%,
+      oklch(0.15 0.04 265 / 0.85) 100%
+    );
+  }
+  .frame-gold {
+    box-shadow:
+      0 0 0 1px var(--gold-soft),
+      0 30px 60px -30px oklch(0.18 0.04 265 / 0.4);
+  }
+  .ink-section {
+    background: var(--ink);
+    color: var(--parchment);
+  }
+  .grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(
+      oklch(0.18 0.04 265 / 0.04) 1px,
+      transparent 1px
+    );
+    background-size: 3px 3px;
+    mix-blend-mode: multiply;
+  }
+}
