@@ -64,7 +64,7 @@ const galleryPreview = [
     description: 'Choir ministrations lifting praise to the Most High.',
   },
   {
-    src: img.image_f,
+    src: img.image_m,
     title: 'Night of Revival',
     description: 'Open-air crusade reaching the lost in our community.',
   },
@@ -89,7 +89,7 @@ const galleryPreview = [
     description: 'Carrying the Word across nations.',
   },
   {
-    src: img.image_k,
+    src: img.image_f,
     title: 'Youth Encounter',
     description: 'A generation lifting up holy hands.',
   },
