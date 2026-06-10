@@ -144,6 +144,66 @@ const photos: (GalleryImage & { category: Exclude<Category, 'All'> })[] = [
     category: 'Outreach',
   },
   {
+    src: img.image_n,
+    title: 'Service in Spirit',
+    description: 'Worship and fellowship.',
+    category: 'Worship',
+  },
+  {
+    src: img.image_o,
+    title: 'Gathering in Faith',
+    description: 'Community worship moment.',
+    category: 'Worship',
+  },
+  {
+    src: img.image_p,
+    title: 'Holy Celebration',
+    description: 'Rejoicing in the Lord.',
+    category: 'Worship',
+  },
+  {
+    src: img.image_q,
+    title: 'Praise and Adoration',
+    description: 'Hearts lifted in worship.',
+    category: 'Worship',
+  },
+  {
+    src: img.image_r,
+    title: 'Spiritual Awakening',
+    description: 'Ministry in motion.',
+    category: 'Worship',
+  },
+  {
+    src: img.image_s,
+    title: 'Covenant Moment',
+    description: 'Sacred service gathering.',
+    category: 'Worship',
+  },
+  {
+    src: img.image_t,
+    title: 'Divine Fellowship',
+    description: 'Unity in worship.',
+    category: 'Worship',
+  },
+  {
+    src: img.image_u,
+    title: 'Blessed Assembly',
+    description: 'The body of Christ together.',
+    category: 'Worship',
+  },
+  {
+    src: img.image_v,
+    title: 'Ministry Presence',
+    description: "God's anointing at work.",
+    category: 'Worship',
+  },
+  {
+    src: img.image_w,
+    title: 'Harvest of Souls',
+    description: 'Souls gathering for Christ.',
+    category: 'Worship',
+  },
+  {
     src: img.early,
     title: 'Early Ministry Days',
     description: 'Foundation years of growth.',
@@ -155,24 +215,24 @@ const photos: (GalleryImage & { category: Exclude<Category, 'All'> })[] = [
     description: 'Servant leadership.',
     category: 'Founder',
   },
-  {
-    src: img.feature_a,
-    title: 'Omowunmi omo grace',
-    description: 'Member of the church.',
-    category: 'Members',
-  },
-  {
-    src: img.feature_b,
-    title: 'Babatunde oluwafemi',
-    description: 'Member of the church.',
-    category: 'Members',
-  },
-  {
-    src: img.feature_c,
-    title: 'Damilola',
-    description: 'Member of the church.',
-    category: 'Members',
-  },
+  // {
+  //   src: img.feature_a,
+  //   title: 'Omowunmi omo grace',
+  //   description: 'Member of the church.',
+  //   category: 'Members',
+  // },
+  // {
+  //   src: img.feature_b,
+  //   title: 'Babatunde oluwafemi',
+  //   description: 'Member of the church.',
+  //   category: 'Members',
+  // },
+  // {
+  //   src: img.feature_c,
+  //   title: 'Damilola',
+  //   description: 'Member of the church.',
+  //   category: 'Members',
+  // },
 ];
 
 const categories: Category[] = [

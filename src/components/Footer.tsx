@@ -165,7 +165,28 @@ export function Footer() {
             © 2026 Cherubim & Seraphim New Generation Revelation Ministry. All
             Rights Reserved.
           </p>
-          <p>Built with reverence.</p>
+          <p className='flex flex-wrap items-center gap-2'>
+            <span>
+              Built with reverence by{' '}
+              <span className='text-parchment/80'>Samuel Oluwasegun</span>
+            </span>
+            <span className='hidden sm:inline text-parchment/20'>|</span>
+            <span>Want a website? Reach out:</span>
+            <a
+              href='tel:+2349048095407'
+              className='hover:text-gold transition'
+              aria-label='Call Samuel Oluwasegun'
+            >
+              <FaPhoneAlt className='inline text-[10px]' />
+            </a>
+            <a
+              href='https://wa.me/2349048095407'
+              className='hover:text-gold transition'
+              aria-label='WhatsApp Samuel Oluwasegun'
+            >
+              <FaWhatsapp className='inline' />
+            </a>
+          </p>
         </div>
       </div>
     </footer>

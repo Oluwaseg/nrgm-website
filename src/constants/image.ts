@@ -46,8 +46,10 @@ export const img = {
     'https://res.cloudinary.com/depnalr40/image/upload/v1780570559/67887884_646833185821444_1578555362095661056_n.jpg_c6gwl0.jpg',
   founder6:
     'https://res.cloudinary.com/depnalr40/image/upload/v1780570585/71593605_687444595093636_416547145504522240_n.jpg_iqkdud.jpg',
-  founder7: '',
-  founder8: '',
+  founder7:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780570602/71932565_687501668421262_8349503203238215680_n.jpg_gpmiva.jpg',
+  founder8:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780570468/486605684_2056985881472827_1274941982296147185_n.jpg_tnqigp.jpg',
   founder9: '',
   founder10: '',
 

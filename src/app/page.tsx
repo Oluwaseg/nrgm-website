@@ -102,10 +102,11 @@ const galleryPreview = [
 
 export default function Home() {
   const founderImages = [
-    img.founder1,
-    img.founder2,
+    img.image_p,
+    img.image_r,
     img.founder3,
-    img.founder4,
+    img.founder7,
+    img.founder8,
   ];
 
   return (

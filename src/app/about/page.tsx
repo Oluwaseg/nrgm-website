@@ -141,7 +141,7 @@ export default function About() {
               <span className='italic text-gold'>shape everything</span>.
             </h2>
             <img
-              src={img.founder5}
+              src={img.image_p}
               alt='Open Bible'
               loading='lazy'
               className='mt-10 w-full rounded-sm frame-gold'
