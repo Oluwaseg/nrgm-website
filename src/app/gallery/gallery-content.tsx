@@ -13,6 +13,7 @@ type Category =
   | 'Founder'
   | 'International'
   | 'Choir'
+  | 'Members'
   | 'Outreach';
 
 const photos: (GalleryImage & { category: Exclude<Category, 'All'> })[] = [
@@ -154,6 +155,24 @@ const photos: (GalleryImage & { category: Exclude<Category, 'All'> })[] = [
     description: 'Servant leadership.',
     category: 'Founder',
   },
+  {
+    src: img.feature_a,
+    title: 'Omowunmi omo grace',
+    description: 'Member of the church.',
+    category: 'Members',
+  },
+  {
+    src: img.feature_b,
+    title: 'Babatunde oluwafemi',
+    description: 'Member of the church.',
+    category: 'Members',
+  },
+  {
+    src: img.feature_c,
+    title: 'Damilola',
+    description: 'Member of the church.',
+    category: 'Members',
+  },
 ];
 
 const categories: Category[] = [
@@ -164,6 +183,7 @@ const categories: Category[] = [
   'International',
   'Choir',
   'Outreach',
+  'Members',
 ];
 
 export function GalleryContent() {

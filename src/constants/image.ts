@@ -87,7 +87,38 @@ export const img = {
     'https://res.cloudinary.com/depnalr40/image/upload/v1780565545/IMG-20260604-WA0034_aivavd.jpg',
   image_m:
     'https://res.cloudinary.com/depnalr40/image/upload/v1780570482/487485567_2056984994806249_7061624647594081317_n.jpg_ampvwj.jpg',
-  image_n: '',
-  image_o: '',
-  image_p: '',
+  image_n:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780755629/WhatsApp_Image_2026-06-05_at_4.52.03_PM_1_r7gpiz.jpg',
+  image_o:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780755629/WhatsApp_Image_2026-06-05_at_4.52.03_PM_faxbem.jpg',
+  image_p:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780755628/WhatsApp_Image_2026-06-05_at_4.52.05_PM_xrcz47.jpg',
+  image_q:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780755628/WhatsApp_Image_2026-06-05_at_4.52.02_PM_rmprot.jpg',
+  image_r:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780755627/WhatsApp_Image_2026-06-05_at_4.52.04_PM_wbitd7.jpg',
+  image_s:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780755627/WhatsApp_Image_2026-06-05_at_4.52.04_PM_2_zbq5zd.jpg',
+  image_t:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780755627/WhatsApp_Image_2026-06-05_at_4.52.04_PM_1_ytcbww.jpg',
+  image_u:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780755627/WhatsApp_Image_2026-06-05_at_4.52.02_PM_1_nifuca.jpg',
+  image_v:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1780755254/557249655_2208948709609876_6154236097032419729_n.jpg_wx1uar.jpg',
+  image_w:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1781086737/WhatsApp_Image_2026-06-05_at_4.52.05_PM_1_ze8nf5.jpg',
+  image_x: '',
+  image_y: '',
+  image_z: '',
+
+  // features
+  feature_a:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1781087091/WhatsApp_Image_2026-06-09_at_1.51.42_AM_ri8m36.jpg',
+  feature_b:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1781087091/WhatsApp_Image_2026-06-09_at_1.54.38_AM_wlmj5h.jpg',
+  feature_c:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1781087093/WhatsApp_Image_2026-06-09_at_1.52.39_AM_qbisro.jpg',
+  feature_d: '',
+  feature_e: '',
+  feature_f: '',
 };
