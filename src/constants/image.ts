@@ -113,6 +113,9 @@ export const img = {
   image_y: '',
   image_z: '',
 
+  // Annual Shiloh 2026 flyer — replace with actual uploaded flyer URL
+  shiloh2026Flyer: 'https://res.cloudinary.com/depnalr40/image/upload/v1787139091/20260814_124931_ucmkc7.jpg',
+
   // features
   feature_a:
     'https://res.cloudinary.com/depnalr40/image/upload/v1781087091/WhatsApp_Image_2026-06-09_at_1.51.42_AM_ri8m36.jpg',

@@ -1,5 +1,7 @@
+import { FeaturedEvent } from '@/components/FeaturedEvent';
 import { FounderCarousel } from '@/components/FounderCarousel';
 import { LightboxGallery } from '@/components/LightboxGallery';
+import { VideoHero } from '@/components/VideoHero';
 import { img } from '@/constants';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -111,7 +113,10 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO */}
+      {/* VIDEO HERO — renders only when video URL is configured */}
+      <VideoHero />
+
+      {/* HERO (static fallback when no video) */}
       <section className='relative min-h-[100vh] flex items-end overflow-hidden'>
         <img
           src={img.heroWorship.src}
@@ -155,6 +160,9 @@ export default function Home() {
           Scroll
         </div>
       </section>
+
+      {/* FEATURED EVENT — ANNUAL SHILOH 2026 */}
+      <FeaturedEvent />
 
       {/* ABOUT PREVIEW */}
       <section className='relative py-24 lg:py-32'>
