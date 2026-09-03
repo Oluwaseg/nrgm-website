@@ -50,8 +50,22 @@ export const img = {
     'https://res.cloudinary.com/depnalr40/image/upload/v1780570602/71932565_687501668421262_8349503203238215680_n.jpg_gpmiva.jpg',
   founder8:
     'https://res.cloudinary.com/depnalr40/image/upload/v1780570468/486605684_2056985881472827_1274941982296147185_n.jpg_tnqigp.jpg',
-  founder9: '',
-  founder10: '',
+  founder9:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1788434097/WhatsApp_Image_2026-09-02_at_10.02.46_AM_phag3r.jpg',
+  founder10:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1788434097/WhatsApp_Image_2026-09-02_at_10.02.48_AM_2_fbimme.jpg',
+  founder11:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1788434098/WhatsApp_Image_2026-09-02_at_10.02.47_AM_gfn0vm.jpg',
+  founder12:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1788434098/WhatsApp_Image_2026-09-02_at_10.02.47_AM_4_b7w4gu.jpg',
+  founder13:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1788434098/WhatsApp_Image_2026-09-02_at_10.02.47_AM_3_zbj8ky.jpg',
+  founder14:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1788434098/WhatsApp_Image_2026-09-02_at_10.02.47_AM_2_hkhlmv.jpg',
+  founder15:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1788434098/WhatsApp_Image_2026-09-02_at_10.02.46_AM_1_ls0bil.jpg',
+  founder16: '',
+  founder17: '',
 
   founded:
     'https://res.cloudinary.com/depnalr40/image/upload/v1780570215/488699506_2061411161030299_5706688121258083569_n.jpg_logx5h.jpg',
@@ -114,7 +128,8 @@ export const img = {
   image_z: '',
 
   // Annual Shiloh 2026 flyer — replace with actual uploaded flyer URL
-  shiloh2026Flyer: 'https://res.cloudinary.com/depnalr40/image/upload/v1787139091/20260814_124931_ucmkc7.jpg',
+  shiloh2026Flyer:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1787139091/20260814_124931_ucmkc7.jpg',
 
   // features
   feature_a:
