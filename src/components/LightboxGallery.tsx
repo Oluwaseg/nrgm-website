@@ -10,7 +10,7 @@ import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 
 export type GalleryImage = {
   src: string;
-  title: string;
+  title?: string;
   description?: string;
   /** Optional aspect hint for masonry: 'tall' | 'wide' | 'square' */
   shape?: 'tall' | 'wide' | 'square';
@@ -51,8 +51,8 @@ export function LightboxGallery({
 
   const slides = images.map((img) => ({
     src: img.src,
-    alt: img.title,
-    title: img.title,
+    alt: img.title ?? 'Church gallery image',
+    title: img.title ?? 'Gallery image',
     description: img.description,
   }));
 
@@ -119,13 +119,13 @@ function GalleryTile({
       ref={buttonRef}
       type='button'
       onClick={onClick}
-      aria-label={`Open image ${index + 1} of ${total}: ${img.title}${img.description ? `. ${img.description}` : ''}`}
+      aria-label={`Open image ${index + 1} of ${total}: ${img.title ?? 'Gallery image'}${img.description ? `. ${img.description}` : ''}`}
       aria-haspopup='dialog'
       className={`group relative block w-full overflow-hidden rounded-md bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background ${aspect ?? ''}`}
     >
       <img
         src={img.src}
-        alt={img.title}
+        alt={img.title ?? 'Gallery image'}
         loading='lazy'
         decoding='async'
         sizes='(min-width:1024px) 25vw, (min-width:640px) 33vw, 50vw'
@@ -141,7 +141,7 @@ function GalleryTile({
       >
         <p className='text-xs uppercase tracking-[0.2em] text-gold'>View</p>
         <p className='mt-1 font-display text-lg text-parchment leading-tight'>
-          {img.title}
+          {img.title ?? 'Gallery image'}
         </p>
       </div>
     </button>

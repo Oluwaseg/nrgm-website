@@ -1,3 +1,4 @@
+import type { GalleryImage } from '@/components/LightboxGallery';
 import { img } from '@/constants';
 import {
   FaBullhorn,
@@ -41,47 +42,18 @@ export const ministries = [
   },
 ];
 
-export const galleryPreview = [
-  {
-    src: img.image_d,
-    title: 'Sunday Worship',
-    description: 'Choir ministrations lifting praise to the Most High.',
-  },
-  {
-    src: img.image_m,
-    title: 'Night of Revival',
-    description: 'Open-air crusade reaching the lost in our community.',
-  },
-  {
-    src: img.image_e,
-    title: 'Hour of Impartation',
-    description: 'Prophet ministering at the altar of healing.',
-  },
-  {
-    src: img.image_g,
-    title: 'River Baptism',
-    description: 'New believers entering the covenant by water.',
-  },
-  {
-    src: img.image_h,
-    title: 'Evening Watch',
-    description: 'Stillness before God in the late candle hour.',
-  },
-  {
-    src: img.image_j,
-    title: 'International Pulpit',
-    description: 'Carrying the Word across nations.',
-  },
-  {
-    src: img.image_f,
-    title: 'Youth Encounter',
-    description: 'A generation lifting up holy hands.',
-  },
-  {
-    src: img.image_i,
-    title: "Women's Fellowship",
-    description: 'Daughters of Zion gathered in unity.',
-  },
+export const galleryPreview: GalleryImage[] = [
+  { src: img.image_d },
+  { src: img.image_m },
+  { src: img.image_e },
+  { src: img.image_g },
+  { src: img.image_h },
+  { src: img.image_j },
+  { src: img.image_f },
+  { src: img.image_i },
+  { src: img.image_n },
+  { src: img.image_o },
+  { src: img.image_v },
 ];
 
 export const founderImages = [

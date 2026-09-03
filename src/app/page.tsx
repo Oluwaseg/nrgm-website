@@ -216,13 +216,13 @@ export default function Home() {
           <div className='grid grid-cols-2 gap-4'>
             <img
               src={img.founder12}
-              alt='Night of revival'
+              alt=''
               loading='lazy'
               className='w-full aspect-[3/4] object-cover rounded-sm translate-y-6'
             />
             <img
-              src={img.founder13}
-              alt='Sunday worship'
+              src={img.founder17}
+              alt=''
               loading='lazy'
               className='w-full aspect-[3/4] object-cover rounded-sm'
             />

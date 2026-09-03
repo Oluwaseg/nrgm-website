@@ -42,12 +42,7 @@ export function DescendingDayModal({ open, onClose }: Props) {
   const isToday = new Date().toDateString() === dateObj.toDateString();
   const eventStarted = Date.now() >= dateObj.getTime();
 
-  const calendarUrl =
-    'https://www.google.com/calendar/render?action=TEMPLATE' +
-    `&text=${encodeURIComponent('Annual Shiloh 2026 — Descending Day')}` +
-    `&dates=${encodeURIComponent('20260903T090000/20260903T160000')}` +
-    `&details=${encodeURIComponent('Celebration of our prophetic yearly 40 days fasting and prayers at New Generation Revelation Ministry, Ijagba Ota.')}` +
-    `&location=${encodeURIComponent(shiloh.address)}`;
+  const facebookUrl = 'https://web.facebook.com/profile.php?id=100014843042245';
 
   return (
     <div
@@ -143,12 +138,12 @@ export function DescendingDayModal({ open, onClose }: Props) {
               <HiPhone /> Call Now
             </a>
             <a
-              href={calendarUrl}
+              href={facebookUrl}
               target='_blank'
               rel='noreferrer'
               className='inline-flex items-center justify-center gap-2 rounded-full border border-ink px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-ink transition hover:bg-ink hover:text-parchment'
             >
-              <HiCalendar /> Add to Calendar
+              <HiCalendar /> Watch Live
             </a>
           </div>
 

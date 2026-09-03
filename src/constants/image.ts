@@ -64,9 +64,14 @@ export const img = {
     'https://res.cloudinary.com/depnalr40/image/upload/v1788434098/WhatsApp_Image_2026-09-02_at_10.02.47_AM_2_hkhlmv.jpg',
   founder15:
     'https://res.cloudinary.com/depnalr40/image/upload/v1788434098/WhatsApp_Image_2026-09-02_at_10.02.46_AM_1_ls0bil.jpg',
-  founder16: '',
-  founder17: '',
-
+  founder16:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1788440410/WhatsApp_Image_2026-09-03_at_10.06.22_AM_snw9v4.jpg',
+  founder17:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1788441955/745123521_2457923184712426_7130401676642426217_n.jpg_lz3lg7.jpg',
+  founder18:
+    'https://res.cloudinary.com/depnalr40/image/upload/v1788441986/741365862_2453195398518538_1804341232430494150_n.jpg_ixozps.jpg',
+  founder19: '',
+  founder20: '',
   founded:
     'https://res.cloudinary.com/depnalr40/image/upload/v1780570215/488699506_2061411161030299_5706688121258083569_n.jpg_logx5h.jpg',
 
