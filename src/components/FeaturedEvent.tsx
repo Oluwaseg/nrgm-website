@@ -1,13 +1,13 @@
 'use client';
 import { img } from '@/constants';
-import { useEffect, useState } from 'react';
-import { HiCalendar } from 'react-icons/hi';
-import { HiArrowRight } from 'react-icons/hi';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { HiArrowRight, HiCalendar } from 'react-icons/hi';
+import { DescendingDayModal } from './DescendingDayModal';
 import { FlyerModal } from './FlyerModal';
 
 const DESCENDING_DAY = new Date('2026-09-03T10:00:00+01:00').getTime();
-const EVENT_END = new Date('2026-09-03T16:00:00+01:00').getTime();
+const EVENT_END = new Date('2026-09-03T19:00:00+01:00').getTime();
 
 function CountdownToDescending() {
   const [now, setNow] = useState<number | null>(null);
@@ -38,7 +38,10 @@ function CountdownToDescending() {
           ['Min', m],
           ['Sec', s],
         ].map(([l, v]) => (
-          <div key={l as string} className='bg-ink text-parchment py-2.5 rounded-sm'>
+          <div
+            key={l as string}
+            className='bg-ink text-parchment py-2.5 rounded-sm'
+          >
             <div className='font-display text-xl text-gold'>
               {String(v).padStart(2, '0')}
             </div>
@@ -54,11 +57,21 @@ function CountdownToDescending() {
 
 export function FeaturedEvent() {
   const [flyerOpen, setFlyerOpen] = useState(false);
+  const [descendingOpen, setDescendingOpen] = useState(false);
   const [visible, setVisible] = useState(true);
+
+  const isDescendingDay =
+    new Date().toDateString() === new Date(DESCENDING_DAY).toDateString();
 
   useEffect(() => {
     if (Date.now() > EVENT_END) setVisible(false);
   }, []);
+
+  useEffect(() => {
+    if (!isDescendingDay) return;
+    const timer = setTimeout(() => setDescendingOpen(true), 600);
+    return () => clearTimeout(timer);
+  }, [isDescendingDay]);
 
   if (!visible) return null;
 
@@ -84,8 +97,7 @@ export function FeaturedEvent() {
                 Sunday, July 26 – Thursday, September 3, 2026
               </p>
               <h2 className='mt-4 font-display text-4xl lg:text-5xl text-parchment leading-tight'>
-                Annual Shiloh{' '}
-                <span className='italic text-gold'>2026</span>
+                Annual Shiloh <span className='italic text-gold'>2026</span>
               </h2>
               <p className='mt-2 text-lg font-semibold uppercase tracking-wider text-gold-soft'>
                 40 Days Fasting & Prayer
@@ -128,16 +140,22 @@ export function FeaturedEvent() {
                   </p>
                   <div className='mt-5 space-y-4 text-left text-sm text-parchment/80'>
                     <div>
-                      <p className='text-gold text-xs uppercase tracking-wider'>Mon, Wed & Fri</p>
+                      <p className='text-gold text-xs uppercase tracking-wider'>
+                        Mon, Wed & Fri
+                      </p>
                       <p>Vigil · 11:00 PM – 3:00 AM</p>
                     </div>
                     <div>
-                      <p className='text-gold text-xs uppercase tracking-wider'>Tue & Thu</p>
+                      <p className='text-gold text-xs uppercase tracking-wider'>
+                        Tue & Thu
+                      </p>
                       <p>Revival · 5:00 PM – 7:00 PM</p>
                     </div>
                     <div className='pt-3 border-t border-parchment/10'>
-                      <p className='text-gold text-xs uppercase tracking-wider'>Descending Day</p>
-                      <p>Thu, Sept 3 · 10:00 AM – 4:00 PM</p>
+                      <p className='text-gold text-xs uppercase tracking-wider'>
+                        Descending Day
+                      </p>
+                      <p>Thu, Sept 3 · 10:00 AM – 7:00 PM</p>
                     </div>
                   </div>
                 </div>
@@ -152,6 +170,10 @@ export function FeaturedEvent() {
         alt='Annual Shiloh 2026 Official Flyer'
         open={flyerOpen}
         onClose={() => setFlyerOpen(false)}
+      />
+      <DescendingDayModal
+        open={descendingOpen}
+        onClose={() => setDescendingOpen(false)}
       />
     </>
   );
